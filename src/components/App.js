@@ -21,7 +21,7 @@ class App extends React.Component {
         //update state with the videos returned from the api
        this.setState({ 
         videos: response.data.items,
-        selectedVideo: response.data.items[0]
+        selectedVideo: response.data.items[0] //set the default video to be the first item in the response data array to prevent video sticking behaviour
     });
     };
 
